@@ -40,8 +40,12 @@ public class ThreadPoolTest {
 		System.out.println("Total time: " + end);
 		
 		for(char c : chars){
-		//	assertTrue(Character.isUpperCase(c));
-			System.out.println(c);
+			assertTrue(Character.isUpperCase(c));
+//			System.out.println(c);
+			if(Character.isLowerCase(c))
+			{
+				System.out.println(c);
+			}
 		}	
 	}
 }
